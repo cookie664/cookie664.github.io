@@ -11,34 +11,71 @@
       text-align: center;
     }
 
+    /* NAVBAR SAME AS MAIN PAGE */
+    .navbar {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(20, 25, 40, 0.7);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+
+    .nav-btn {
+      color: #ccc;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .nav-btn:hover {
+      background: #00aaff;
+      color: black;
+    }
+
     h1 {
       margin-top: 200px;
       font-size: 70px;
-      text-shadow: 0 0 15px #fff;
+      text-shadow: 0 0 10px #fff;
     }
 
     .home-btn {
       margin-top: 50px;
       padding: 15px 40px;
       font-size: 20px;
-      border: none;
+      border: 2px solid #00aaff;
       border-radius: 15px;
-      cursor: pointer;
-      background: linear-gradient(135deg, #ff00ff, #00ffff);
-      color: white;
-      box-shadow: 0 0 15px #ff00ff, 0 0 25px #00ffff;
-      transition: transform 0.2s, box-shadow 0.2s;
+      color: #00aaff;
       text-decoration: none;
+      background: transparent;
+      transition: 0.3s;
+      cursor: pointer;
     }
 
     .home-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px #fff;
+      background: #00aaff;
+      color: black;
     }
   </style>
 </head>
 <body>
-  <h1>Coming Soon...</h1>
-  <a class="home-btn" href="index.html">Home</a>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <a class="nav-btn" href="index.html">Home</a>
+  <a class="nav-btn" href="comingsoon.html">Download</a>
+  <a class="nav-btn" href="socials.html">Socials</a>
+</div>
+
+<h1>Coming Soon...</h1>
+<a class="home-btn" href="index.html">Home</a>
+
 </body>
 </html>
