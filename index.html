@@ -2,119 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Zinora</title>
+  <title>Home</title>
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
-      margin: 0;
       background: black;
       color: white;
-      font-family: Arial, sans-serif;
       text-align: center;
-    }
-
-    .section {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    h1 {
-      font-size: 40px;
-      margin-bottom: 30px;
+      font-family: Arial;
     }
 
     button {
-      padding: 15px 40px;
+      padding: 15px 30px;
       font-size: 18px;
       border: none;
-      border-radius: 12px;
+      border-radius: 10px;
       cursor: pointer;
-      margin: 10px;
-      transition: 0.3s;
     }
 
-    button:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 20px white;
-    }
-
-    /* Top buttons */
     .top-buttons {
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    /* TikTok button */
-    .tiktok {
-      background: linear-gradient(45deg, #ff0050, #00f2ea);
-      color: white;
-    }
-
-    /* YouTube button */
-    .youtube {
-      background: linear-gradient(45deg, red, white);
-      color: black;
-    }
-
-    /* Nav buttons */
-    .nav-btn {
-      background: white;
-      color: black;
+      margin-top: 100px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HOME SECTION -->
-  <div id="home" class="section">
-    <h1>ZINORA</h1>
-
-    <div class="top-buttons">
-      <a href="#download">
-        <button class="nav-btn">Download</button>
-      </a>
-
-      <a href="#socials">
-        <button class="nav-btn">Socials</button>
-      </a>
-    </div>
-  </div>
-
-  <!-- DOWNLOAD SECTION -->
-  <div id="download" class="section">
-    <h1>Coming Soon...</h1>
-
-    <a href="#home">
-      <button class="nav-btn">Home</button>
-    </a>
-  </div>
-
-  <!-- SOCIALS SECTION -->
-  <div id="socials" class="section">
-    <h1>Socials</h1>
-
-    <!-- YouTube (does nothing) -->
-    <button class="youtube">YouTube</button>
-
-    <!-- TikTok (works) -->
-    <a href="https://www.tiktok.com/@zinoraprojecthub" target="_blank">
-      <button class="tiktok">TikTok</button>
-    </a>
-
-    <br>
-
-    <a href="#home">
-      <button class="nav-btn">Home</button>
+  <div class="top-buttons">
+    <a href="socials.html">
+      <button>Socials</button>
     </a>
   </div>
 
