@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Socials</title>
+
+  <style>
+    body {
+      background: black;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    .container {
+      margin-top: 100px;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 15px 40px;
+      font-size: 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      color: white;
+    }
+
+    /* YouTube button (red + white) */
+    .youtube {
+      background: linear-gradient(45deg, red, white);
+      color: black;
+    }
+
+    /* TikTok button (pink + blue) */
+    .tiktok {
+      background: linear-gradient(45deg, #ff0050, #00f2ea);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- YouTube (does nothing for now) -->
+    <button class="youtube">YouTube</button>
+
+    <!-- TikTok (works) -->
+    <a href="https://www.tiktok.com/@zinoraprojecthub" target="_blank">
+      <button class="tiktok">TikTok</button>
+    </a>
+  </div>
+
+</body>
+</html>
