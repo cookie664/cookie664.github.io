@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Socials</title>
+  <title>Xenzy</title>
   <style>
     body {
       margin: 0;
@@ -12,7 +12,6 @@
       text-align: center;
     }
 
-    /* NAVBAR */
     .navbar {
       position: fixed;
       top: 20px;
@@ -33,19 +32,17 @@
       text-decoration: none;
       padding: 8px 15px;
       border-radius: 10px;
-      transition: 0.3s, box-shadow 0.3s;
+      transition: 0.3s;
     }
 
     .nav-btn:hover {
       background: #00aaff;
       color: black;
-      box-shadow: 0 0 15px #00aaff;
     }
 
     h1 {
       margin-top: 150px;
       font-size: 70px;
-      text-shadow: 0 0 10px #fff;
     }
 
     .btn {
@@ -56,7 +53,6 @@
       border: 2px solid #00aaff;
       border-radius: 15px;
       color: #00aaff;
-      text-decoration: none;
       background: transparent;
       transition: 0.3s;
       cursor: pointer;
@@ -67,25 +63,6 @@
       color: black;
     }
 
-    .home-btn {
-      display: inline-block;
-      margin-top: 50px;
-      padding: 12px 30px;
-      font-size: 18px;
-      border: 2px solid #00aaff;
-      border-radius: 15px;
-      color: #00aaff;
-      text-decoration: none;
-      background: transparent;
-      transition: 0.3s;
-    }
-
-    .home-btn:hover {
-      background: #00aaff;
-      color: black;
-    }
-
-    /* STARS */
     .star {
       position: absolute;
       width: 2px;
@@ -103,7 +80,6 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <div class="navbar">
   <a class="nav-btn" href="index.html">Home</a>
   <a class="nav-btn" href="comingsoon.html">Download</a>
@@ -117,10 +93,6 @@
   <button class="btn">TikTok</button>
 </a>
 
-<br>
-<a class="home-btn" href="index.html">Home</a>
-
-<!-- STARS SCRIPT -->
 <script>
   for (let i = 0; i < 150; i++) {
     let star = document.createElement("div");
