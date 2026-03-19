@@ -1,38 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Home</title>
-
+  <title>Xenzy</title> 
   <style>
     body {
-      background: black;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at center, #0a0f2c, #020617);
       color: white;
-      text-align: center;
-      font-family: Arial;
+      overflow: hidden;
     }
 
-    button {
-      padding: 15px 30px;
-      font-size: 18px;
-      border: none;
+    /* TOP BAR */
+    .navbar {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(20, 25, 40, 0.7);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+
+    .nav-btn {
+      color: #ccc;
+      text-decoration: none;
+      padding: 8px 15px;
       border-radius: 10px;
-      cursor: pointer;
+      transition: 0.3s;
     }
 
-    .top-buttons {
-      margin-top: 100px;
+    .nav-btn:hover {
+      background: #00aaff;
+      color: black;
+    }
+
+    /* MAIN TEXT */
+    .container {
+      text-align: center;
+      margin-top: 180px;
+    }
+
+    h1 {
+      font-size: 100px;
+      letter-spacing: 10px;
+      margin: 0;
+    }
+
+    p {
+      color: #aaa;
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 18px;
+    }
+
+    /* BUTTONS */
+    .buttons {
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      border: 2px solid #00aaff;
+      border-radius: 15px;
+      color: #00aaff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00aaff;
+      color: black;
+    }
+
+    /* STARS */
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      opacity: 0.8;
+      animation: move linear infinite;
+    }
+
+    @keyframes move {
+      from { transform: translateY(0); }
+      to { transform: translateY(100vh); }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="top-buttons">
-    <a href="socials.html">
-      <button>Socials</button>
-    </a>
+<!-- NAVBAR -->
+<div class="navbar">
+  <a class="nav-btn" href="index.html">Home</a>
+  <a class="nav-btn" href="comingsoon.html">Download</a>
+  <a class="nav-btn" href="socials.html">Socials</a>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+  <h1>Xenzy's OGFN Center</h1> 
+  <p>
+    Welcome to the best OGFN Center out there! You can find downloads, 
+    links, and everything you need here.
+  </p>
+
+  <div class="buttons">
+    <a class="btn" href="comingsoon.html">Download</a>
+    <a class="btn" href="socials.html">Socials</a>
   </div>
+</div>
+
+<!-- STARS SCRIPT -->
+<script>
+  for (let i = 0; i < 150; i++) {
+    let star = document.createElement("div");
+    star.className = "star";
+    star.style.left = Math.random() * 100 + "vw";
+    star.style.top = Math.random() * 100 + "vh";
+    star.style.animationDuration = (Math.random() * 10 + 5) + "s";
+    document.body.appendChild(star);
+  }
+</script>
 
 </body>
 </html>
