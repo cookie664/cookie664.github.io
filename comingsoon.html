@@ -8,10 +8,11 @@
       font-family: Arial, sans-serif;
       background: radial-gradient(circle at center, #0a0f2c, #020617);
       color: white;
+      overflow: hidden;
       text-align: center;
     }
 
-    /* NAVBAR SAME AS MAIN PAGE */
+    /* NAVBAR */
     .navbar {
       position: fixed;
       top: 20px;
@@ -32,12 +33,13 @@
       text-decoration: none;
       padding: 8px 15px;
       border-radius: 10px;
-      transition: 0.3s;
+      transition: 0.3s, box-shadow 0.3s;
     }
 
     .nav-btn:hover {
       background: #00aaff;
       color: black;
+      box-shadow: 0 0 15px #00aaff;
     }
 
     h1 {
@@ -63,6 +65,21 @@
       background: #00aaff;
       color: black;
     }
+
+    /* STARS */
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      opacity: 0.8;
+      animation: move linear infinite;
+    }
+
+    @keyframes move {
+      from { transform: translateY(0); }
+      to { transform: translateY(100vh); }
+    }
   </style>
 </head>
 <body>
@@ -76,6 +93,18 @@
 
 <h1>Coming Soon...</h1>
 <a class="home-btn" href="index.html">Home</a>
+
+<!-- STARS SCRIPT -->
+<script>
+  for (let i = 0; i < 150; i++) {
+    let star = document.createElement("div");
+    star.className = "star";
+    star.style.left = Math.random() * 100 + "vw";
+    star.style.top = Math.random() * 100 + "vh";
+    star.style.animationDuration = (Math.random() * 10 + 5) + "s";
+    document.body.appendChild(star);
+  }
+</script>
 
 </body>
 </html>
