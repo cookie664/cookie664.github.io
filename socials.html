@@ -11,13 +11,42 @@
       text-align: center;
     }
 
+    /* NAVBAR SAME AS MAIN PAGE */
+    .navbar {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(20, 25, 40, 0.7);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+
+    .nav-btn {
+      color: #ccc;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .nav-btn:hover {
+      background: #00aaff;
+      color: black;
+    }
+
     h1 {
       margin-top: 150px;
       font-size: 70px;
       text-shadow: 0 0 10px #fff;
     }
 
-    /* Simple button style like Download page */
+    /* Buttons same style as Download page */
     .btn {
       display: inline-block;
       margin: 20px;
@@ -37,7 +66,6 @@
       color: black;
     }
 
-    /* Home button same style */
     .home-btn {
       display: inline-block;
       margin-top: 50px;
@@ -58,17 +86,26 @@
   </style>
 </head>
 <body>
-  <h1>Socials</h1>
 
-  <!-- YouTube (does nothing) -->
-  <button class="btn">YouTube</button>
+<!-- NAVBAR -->
+<div class="navbar">
+  <a class="nav-btn" href="index.html">Home</a>
+  <a class="nav-btn" href="comingsoon.html">Download</a>
+  <a class="nav-btn" href="socials.html">Socials</a>
+</div>
 
-  <!-- TikTok (works) -->
-  <a href="https://www.tiktok.com/@zinoraprojecthub" target="_blank">
-    <button class="btn">TikTok</button>
-  </a>
+<h1>Socials</h1>
 
-  <br>
-  <a class="home-btn" href="index.html">Home</a>
+<!-- YouTube (does nothing) -->
+<button class="btn">YouTube</button>
+
+<!-- TikTok -->
+<a href="https://www.tiktok.com/@zinoraprojecthub" target="_blank">
+  <button class="btn">TikTok</button>
+</a>
+
+<br>
+<a class="home-btn" href="index.html">Home</a>
+
 </body>
 </html>
